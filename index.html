@@ -1,0 +1,159 @@
+<div class="shop-container">
+  <header class="header">
+    <div class="profile-section">
+      <img src="https://i.ibb.co/0ynLFHn9/IMG-20260202-160732.jpg" class="logo" alt="Logo">
+      <div class="shop-info">
+        <h1>EnYe Shop</h1>
+        <p>Premium Game Services</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="category-banner">
+    <h2>สินค้าและบริการ BLOX FRUITS</h2>
+  </div>
+
+  <main class="product-grid">
+    
+    <div class="product-card">
+      <div class="img-container">
+        <img src="https://i.ibb.co/Psxcd43S/1770045986258.png" alt="Product 1">
+      </div>
+      <div class="info">
+        <h3>รับฟาร์ม Sanguine Art</h3>
+        <p class="detail">การันตีไว งานเนี๊ยบ 100%</p>
+        <p class="price">ราคา 129 เครดิต</p>
+        <a href="https://www.facebook.com/share/1DxTdAo9aR/" class="btn-buy">ติดต่อสั่งซื้อ</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="img-container">
+        <img src="https://via.placeholder.com/300" alt="Product 2">
+      </div>
+      <div class="info">
+        <h3>รับฟาร์มเลเวล Lv.1-2550</h3>
+        <p class="detail">แถมเงินในเกมเยอะมาก</p>
+        <p class="price">ราคา 140 เครดิต</p>
+        <a href="#" class="btn-buy">สั่งซื้อสินค้า</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+/* ตั้งค่าพื้นฐาน */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  background-color: #1a241a; /* เขียวเข้มเกือบดำ */
+  color: #e0e0e0;
+}
+
+/* ส่วนหัว Header */
+.header {
+  background: linear-gradient(135deg, #2d4d2d 0%, #1b331b 100%);
+  padding: 20px;
+  border-bottom: 3px solid #4caf50;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #ffca28; /* ขอบทอง */
+}
+
+.shop-info h1 {
+  margin: 0;
+  color: #ffca28; /* ชื่อร้านสีทอง */
+  font-size: 24px;
+}
+
+/* แบนเนอร์หมวดหมู่ */
+.category-banner {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+/* จัดระเบียบการ์ดสินค้า */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* แบ่ง 2 ช่อง */
+  gap: 15px;
+  padding: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #253325;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #3d5a3d;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #4caf50;
+}
+
+.img-container img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.info {
+  padding: 12px;
+  text-align: center;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.detail {
+  font-size: 11px;
+  color: #a5d6a7;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffca28; /* ราคาสีทอง */
+  margin: 10px 0;
+}
+
+/* ปุ่มสั่งซื้อ */
+.btn-buy {
+  display: block;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-buy:hover {
+  background-color: #388e3c;
+}
